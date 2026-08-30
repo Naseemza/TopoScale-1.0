@@ -96,8 +96,7 @@ Step 2 : Then copy the `Exapmle_correlation_compiler.py` by changing the correla
 
 ```python
 corr_matrix_path = "torsion_correlation.csv" # paste the link for your correlation.csv file
-k = 0.99  # Example value for k
-cutoff_betti = 4  # Example cutoff Betti value
+cutoff_betti = 1
 results_df_protein = process_correlation_matrix(corr_matrix_path, k, cutoff_betti)
 ```
 Step 3 : All the process will automatically load but to see the final result we can use the following code and run it to get the final table result.
@@ -117,8 +116,7 @@ Step 2 : Run the First line od codes to load all the data and wait for it to fin
 Step 3 : Upload your coordinate.csv file or load any random 2D & 3D sample and then Use the code :
 ```python
 xyz_points = xyz_points_normalized # load the point cloud data
-k = 0.25  # Example value for k
-cutoff_betti = 1 # Example cutoff Betti value
+cutoff_betti = 1 
 results_df_torus = process_structural_data(xyz_points, k, cutoff_betti)
 ```
 Step 4 : All the process will automatically load but to see the final result we can use the following code and run it to get the final table result.
