@@ -79,8 +79,7 @@ Step 2 : Run the First line od codes to load all the data and wait for it to fin
 Step 3 : Upload your correlation.csv file and then Use the code :
 ```python
 corr_matrix_path = "torsion_correlation.csv" # paste the link for your correlation.csv file
-k = 0.99  # Example value for k
-cutoff_betti = 4  # Example cutoff Betti value
+cutoff_betti = 1
 results_df_protein = process_correlation_matrix(corr_matrix_path, k, cutoff_betti)
 ```
 Step 4 : All the process will automatically load but to see the final result we can use the following code and run it to get the final table result.
